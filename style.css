@@ -1,0 +1,283 @@
+@font-face {
+  font-family: 'Raiderfont';
+  src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  width: 100%;
+  /*height: 100vh;
+  overflow: hidden;*/
+  background: linear-gradient(90deg, #B3B4AF 50%, #191921 50%);
+  
+}
+
+ul {
+  list-style: none;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.nav ul li {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+  padding: 0 30px;
+}
+
+.nav .logo {
+  flex: 1;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.nav .menu {
+  flex: 1;
+  font-size: 18px;
+}
+
+.nav .collection {
+  flex: 1;
+}
+
+.nav .explore {
+  flex: 4;
+}
+
+.nav .search {
+  flex: 3;
+}
+
+.nav .profile {
+  flex: 0;
+}
+
+.nav .profile .img {
+  background-image: url('./img/8.jpg');
+  background-position: 50%;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.img-at-the-front {
+ margin: 100px 0px 0px 180px;
+}
+.img-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+}
+
+.img-wrapper .karina {
+  background-image: url('./img/7.jpg');
+  background-size: cover;
+  height: 550px;
+  width: 0;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  background: rgba(0, 0, 0, .8);
+  padding: 0 10px;
+}
+
+.info ul li {
+  display: inline-block;
+  padding: 20px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.info i {
+  font-size: 18px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+}
+
+.text h1 {
+  font-size: 90px;
+  color: #fff;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 20px;
+  color: #fff;
+  font-family: monospace;
+}
+
+.name_of_block h2{
+  font-size: 90px;
+  color: #fff;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 30px 30px 50px;
+}
+.name {
+  position: absolute;
+  top: 50%;
+  left: -270px;
+  transform: translateY(-50%);
+  font-size: 90px;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.bottomnav {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+.bottomnav ul li {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin-top: 20px;
+}
+
+.bottomnav ul li:nth-child(2) {
+  font-weight: bolder;
+}
+
+.bottomnav ul li:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 65px;
+  margin: 0 10px 0 -78px;
+  transform: translateY(-3px);
+}
+  
+.second_block {
+  background-color: #B3B4AF;
+  padding-bottom: 30px;
+}
+
+
+.carousel {
+  background: #B3B4AF;
+  padding-bottom: 30px;
+}
+
+.carousel-image {
+  display: block;
+  height: 475px;
+  /* set min-width, allow images to set cell width */
+  min-width: 330px;
+  max-width: 100%;
+  margin-right: 10px;
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.carousel.is-fullscreen .carousel-image {
+  height: auto;
+  max-height: 100%;
+}
+
+.fashion_portfolio{
+  
+}
+.food_portfolio {
+  
+}
+p{
+  font: 13px/1.65em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  
+  /*z-index: 1;
+  /*top: 0;*/
+  /*overflow-x: hidden;*/
+  padding-top: 20px;
+  /*position: static;*/
+  
+  background-color: #B3B4AF;
+}
+
+.left {
+  left: 0;
+ /*background-color: #111;*/
+}
+
+.right {
+  right: 0;
+  
+  /*background-color: red;*/
+}
+
+.centered {
+  /*position: absolute;*/
+  top: 50%;
+  left: 50%;
+  /*transform: translate(-50%, -50%);*/
+  text-align: center;
+}
+
+.centered img {
+  width: 500px;
+  /*border-radius: 50%;*/
+}
+
+.name_of_secondblock{
+  /*position: absolute;*/
+  
+  font-size: 90px;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+.third_block{
+  background: #191921;
+}
+.fourth_block{
+  background: #B3B4AF;
+}
+footer{
+  background: #191921;
+
+}
+.footer-copyright {
+  color: #fff;
+}
