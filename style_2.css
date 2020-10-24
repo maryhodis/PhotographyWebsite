@@ -1,0 +1,128 @@
+@font-face {
+font-family: 'Raiderfont';
+src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Montserrat';
+font-size: 13px;
+width: 100%;
+margin: 0;
+}
+
+h1 {
+font-size: 60px;
+color: black;
+font-family: 'Raiderfont';
+text-transform: uppercase;
+}
+
+h2 {
+text-transform: uppercase;
+letter-spacing: 3px;
+font-size: 18px;
+font-weight: 600;
+}
+
+.row_galery {
+display: -ms-flexbox; /* IE10 */
+display: flex;
+-ms-flex-wrap: wrap; /* IE10 */
+flex-wrap: wrap;
+padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column_galery {
+-ms-flex: 25%; /* IE10 */
+flex: 25%;
+max-width: 25%;
+padding: 0 4px;
+}
+
+.column_galery img {
+margin-top: 8px;
+vertical-align: middle;
+width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.column_galery {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+}}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column_galery {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+}}
+
+li {
+    display: block;
+    transition-duration: 0.5s;
+   }
+   
+li:hover {
+    cursor: pointer;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+
+ul {
+list-style: none;
+}
+
+.nav ul {
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 80px;
+padding: 0 20px;
+margin: 20px 0;
+}
+
+.nav ul li {
+display: inline-block;
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-size: 8px;
+font-weight: 600;
+padding: 0 30px;
+}
+.logo {
+    text-align: center;
+}
